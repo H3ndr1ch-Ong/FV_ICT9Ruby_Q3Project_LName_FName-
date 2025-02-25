@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Train Schedule</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script defer src="script.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #1e1e2f, #3a3a5d);
+            color: white;
+        }
+        .navbar { margin-bottom: 20px; }
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .footer {
+            background: linear-gradient(to right, #0f0f1a, #2c2c4a);
+            color: white;
+            padding: 10px;
+            text-align: center;
+            margin-top: 20px;
+            border-top: 2px solid rgba(255, 255, 255, 0.3);
+        }
+        .table {
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+        }
+        .table th {
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+        }
+        a {
+            color: #f8c471;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Ong's Trains</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="page2.html">Transit Schedule</a></li>
+                    <li class="nav-item"><a class="nav-link" href="page3.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search">
+                <button class="btn btn-outline-light" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- Train Schedule -->
+        <section class="mt-4">
+            <h2>Train Schedule</h2>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Station</th>
+                        <th>First Trip</th>
+                        <th>Last Trip</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Fernando Poe Jr. (FPJ)</td>
+                        <td>4:30 AM</td>
+                        <td>10:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Baclaran</td>
+                        <td>4:30 AM</td>
+                        <td>10:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Gil Puyat</td>
+                        <td>4:45 AM</td>
+                        <td>10:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Central Terminal</td>
+                        <td>5:00 AM</td>
+                        <td>10:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Monumento</td>
+                        <td>4:40 AM</td>
+                        <td>10:00 PM</td>
+                    </tr>
+                    <tr>
+                </tbody>
+            </table>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Created by Enzo Macaranas & Hendrich Ong</p>
+        <p>Source: <a href="https://www.metrolinemap.com/metro/manila/" target="_blank">Metro Line Map</a></p>
+    </footer>
+</body>
+</html>
